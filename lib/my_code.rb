@@ -17,5 +17,8 @@ def map_to_double(source_array)
 end
 
 def map_to_square(source_array)
-  source_array.length.time
+  source_array.length.times do |idx|
+    number = source_array[idx]
+    source_array[idx] = number * number
+  end
 end
