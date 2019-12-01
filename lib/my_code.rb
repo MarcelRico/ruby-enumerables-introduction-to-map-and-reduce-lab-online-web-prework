@@ -29,7 +29,7 @@ def reduce_to_total(source_array,starting_point=0)
   (starting_point...source_array.length).each do |idx|
     total+=source_array[idx]
   end
-  puts "Array = " + source_array
+  puts "Array = " + source_array.to_s
   puts "starting point = " + starting_point.to_s
   puts "total = " + total.to_s
   total
