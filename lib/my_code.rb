@@ -25,7 +25,7 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array,starting_point=0)
-  return nil if source_array[starting_point] == nil
+  puts source_array
   grand_total = 0
   (starting_point...source_array.length).each do |idx|
     grand_total += source_array[idx]
