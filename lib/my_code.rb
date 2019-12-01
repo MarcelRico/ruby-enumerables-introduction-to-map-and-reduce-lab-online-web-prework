@@ -26,7 +26,7 @@ end
 
 def reduce_to_total(source_array,starting_point=0)
   grand_total = 0
-  source_array.length.times do |idx|
+  (starting_point...source_array.length) do |idx|
     grand_total += source_array[idx]
   end
   grand_total
