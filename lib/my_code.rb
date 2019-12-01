@@ -25,8 +25,13 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array,starting_point=0)
-  puts "\nSource Array = " + source_array.to_s
-  puts "Starting Point = " + starting_point.to_s + "\n\n"
+
+  grand_total = starting_point
+
+  source_array.length.times do |idx|
+    grand_total += source_array[idx]
+  end
+  grand_total
 end
 
 def reduce_to_all_true(source_array)
