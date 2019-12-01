@@ -21,4 +21,5 @@ def map_to_square(source_array)
     number = source_array[idx]
     source_array[idx] = number * number
   end
+  source_array
 end
